@@ -6,6 +6,10 @@ menu.onclick = () =>{
     menu.classList.toggle('fa-times');
     header.classList.toggle('active');
 }
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    header.classList.remove('active');
+}
 // dark mood initialization here 
 let themeToggler = document.querySelector('#theme-toggle');
 themeToggler.onclick = () =>{
@@ -16,11 +20,3 @@ themeToggler.onclick = () =>{
         document.body.classList.remove('active');
     }
 }
-// typed js init here 
-var typed = new typed('.typing-text', {
-    Strings: ['front-end developer', 'web designer', 'web developer', 'programmer'],
-    loop: true,
-    typeSpeed: 150,
-    backDelay: 900,
-    backSpeed: 50
-});
